@@ -1,4 +1,4 @@
-const mp = new MercadoPago("TEST-97eb7f19-9988-4b2b-823c-0f7e0524e295", {
+const mp = new MercadoPago("APP_USR-e5c83aac-4e1b-41b6-a4aa-d7184f4e2304", {
     locale: "es-AR"
 });
 
@@ -14,7 +14,7 @@ document.getElementById("checkout-btn").addEventListener("click", async () => {
             price: 2000,
         };
 
-        const response = await fetch("http://localhost:3000/create_preference", {
+        const response = await fetch("https://ivanros02.github.io/mercadoPagoTest/create_preference", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
