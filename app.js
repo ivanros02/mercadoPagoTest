@@ -14,7 +14,7 @@ document.getElementById("checkout-btn").addEventListener("click", async () => {
             price: 2000,
         };
 
-        const response = await fetch("https://ivanros02.github.io/mercadoPagoTest/create_preference", {
+        const response = await fetch("https://playful-treacle-e5c3eb.netlify.app//create_preference", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
